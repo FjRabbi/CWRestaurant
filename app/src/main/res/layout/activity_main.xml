@@ -8,6 +8,7 @@
     android:orientation="vertical"
     tools:context=".MainActivity">
 
+
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/foodRV"
         android:layout_width="match_parent"

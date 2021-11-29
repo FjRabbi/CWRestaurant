@@ -1,20 +1,29 @@
 package com.example.cwresturant;
 
-public class Food {
+import android.widget.ImageView;
+
+import java.io.Serializable;
+
+public class Food implements Serializable {
     private String name;
     private String description;
-    private int Price;
+    private int price;
     private String contactNumber;
     private String Email;
     private String website;
+    private  int FoodImage;
 
-    public Food(String name, String description,int price, String contactNumber, String email, String website) {
+
+    public Food(String name, String description,int price, String contactNumber, String Email, String website, int FoodImage) {
         this.name = name;
         this.description = description;
-        Price = price;
+        this.price = price;
         this.contactNumber = contactNumber;
-        Email = email;
+        this.Email = Email;
         this.website = website;
+        this.FoodImage = FoodImage;
+
+
     }
 
     public String getName() {
@@ -34,11 +43,11 @@ public class Food {
     }
 
     public int getPrice() {
-        return Price;
+        return price;
     }
 
     public void setPrice(int price) {
-        Price = price;
+        price = price;
     }
 
     public String getContactNumber() {
@@ -63,5 +72,14 @@ public class Food {
 
     public void setWebsite(String website) {
         this.website = website;
+    }
+
+
+    public int getFoodImage() {
+        return FoodImage;
+    }
+
+    public void setFoodImage(int foodImage) {
+        FoodImage = foodImage;
     }
 }
